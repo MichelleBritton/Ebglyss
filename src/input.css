@@ -2,8 +2,85 @@
 @import "tailwindcss";
 @source "./";
 
+@theme {
+  --color-beige: #f3ebe6;
+  --shadow-card: 0px 4px 8px -3px rgba(107, 105, 105, 0.7);
+  --text-h1: 62px;
+  --text-h2: 32px;
+}
+
 @layer base {
   body {
     font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+  h1 {
+    @apply text-2xl sm:text-5xl xl:text-h1/19 font-light;
+  }
+  h2 {
+    @apply text-h2 mb-8;
+    font-weight: 100;
+  }
+  footer h2 {
+    @apply text-base font-bold mb-0;
+  }
+  h3 {
+    @apply text-xl font-medium mb-3;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-6;
+  }
+  .card {
+    @apply rounded-2xl  shadow-card bg-beige relative pb-4;
+  }
+  .top-img {
+    @apply w-full;
+  }
+  .top-img img {
+    @apply w-full rounded-tl-2xl rounded-tr-2xl;
+  }
+  .top-img .text {
+    @apply p-10 text-left;
+  }
+  @media (min-width: 768px) {
+    .top-img .text {
+      min-height: 400px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .top-img .text {
+      min-height: 300px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .top-img .text {
+      min-height: 250px;
+    }
+  }
+  .left-img {
+    @apply flex-none md:flex items-center w-full max-w-3xl mx-auto;
+  }
+  .left-img img {
+    @apply w-full md:w-[32%] md:max-w-[260px] h-auto rounded-tl-2xl rounded-tr-2xl md:rounded-bl-2xl md:rounded-tr-none;
+  }
+  .left-img .text {
+    @apply p-10 md:px-10 md:py-0 text-left;
+  }
+  .text p {
+    @apply text-base;
+  }
+  .arrow {
+    background: url("../src/assets/images/arrow.webp") no-repeat;
+    @apply absolute bottom-4 right-4 w-8 h-8 block rounded-full bg-white bg-size-[50%] bg-contain bg-center shadow-card transform-gpu transition-transform duration-300 ease-out hover:scale-110;
+  }
+  .arrow-top .icon {
+    background: url("../src/assets/images/arrow-top.webp") no-repeat;
+    @apply inline-block w-10 h-10 md:w-14 md:h-14 z-10 rounded-full bg-white bg-size-[35%] bg-contain bg-center shadow-card transform-gpu transition-transform duration-300 ease-out hover:scale-110;
+  }
+  footer a {
+    @apply hover:opacity-50 transition-opacity duration-200 ease-out;
   }
 }
