@@ -1,0 +1,17 @@
+# Node / tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build artifacts you don't need in git
+dist/*.map
+
+# OS/editor junk
+.DS_Store
+*.local
+*.cache
+.tmp/
+.vscode/
+.idea/
