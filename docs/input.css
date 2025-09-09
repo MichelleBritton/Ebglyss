@@ -76,11 +76,11 @@
     @apply text-base;
   }
   .arrow {
-    background: url("../src/assets/images/arrow.webp") no-repeat;
+    background: url("../assets/images/arrow.webp") no-repeat;
     @apply absolute bottom-4 right-4 w-8 h-8 block rounded-full bg-white bg-size-[50%] bg-contain bg-center shadow-card transform-gpu transition-transform duration-300 ease-out hover:scale-110;
   }
   .arrow-top .icon {
-    background: url("../src/assets/images/arrow-top.webp") no-repeat;
+    background: url("../assets/images/arrow-top.webp") no-repeat;
     @apply inline-block w-10 h-10 md:w-14 md:h-14 z-10 rounded-full bg-white bg-size-[35%] bg-contain bg-center shadow-card transform-gpu transition-transform duration-300 ease-out hover:scale-110;
   }
   footer a {

@@ -640,7 +640,7 @@
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .arrow {
-    background: url("../src/assets/images/arrow.webp") no-repeat;
+    background: url("../assets/images/arrow.webp") no-repeat;
     position: absolute;
     right: calc(var(--spacing) * 4);
     bottom: calc(var(--spacing) * 4);
@@ -672,7 +672,7 @@
     }
   }
   .arrow-top .icon {
-    background: url("../src/assets/images/arrow-top.webp") no-repeat;
+    background: url("../assets/images/arrow-top.webp") no-repeat;
     z-index: 10;
     display: inline-block;
     height: calc(var(--spacing) * 10);
