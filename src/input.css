@@ -27,6 +27,9 @@
   h3 {
     @apply text-xl font-medium mb-3;
   }
+  a:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-black;
+  }
 }
 
 @layer components {
